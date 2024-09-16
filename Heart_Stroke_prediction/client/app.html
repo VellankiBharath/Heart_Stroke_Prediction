@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="app.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Heart Stroke Prediction</title>
+</head>
+<body>
+    <h1>HEART STROKE PREDICTION</h1>
+
+    <form id="predictionForm">
+        <label for="gender">Gender:</label>
+        <select id="gender" name="gender">
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="other">Other</option>
+        </select>
+
+        <label for="smoking_status">Smoking Status:</label>
+        <select id="smoking_status" name="smoking_status">
+            <option value="formerly smoked">Formerly Smoked</option>
+            <option value="never smoked">Never Smoked</option>
+            <option value="not known">Not Known</option>
+            <option value="smokes">Smokes</option>
+        </select>
+
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age" required>
+
+        <label for="hypertension">Hypertension (1 for yes, 0 for no):</label>
+        <input type="number" id="hypertension" name="hypertension" required>
+
+        <label for="heart_disease">Heart Disease (1 for yes, 0 for no):</label>
+        <input type="number" id="heart_disease" name="heart_disease" required>
+
+        <label for="avg_glucose_level">Average Glucose Level:</label>
+        <input type="number" id="avg_glucose_level" name="avg_glucose_level" step="0.01" required>
+
+        <label for="bmi">BMI:</label>
+        <input type="number" id="bmi" name="bmi" step="0.01" required>
+
+        <button type="submit">Submit</button>
+    </form>
+
+    <!-- Placeholder for result -->
+    <div id="result"></div>
+
+    <script src="app.js"></script>
+</body>
+</html>
